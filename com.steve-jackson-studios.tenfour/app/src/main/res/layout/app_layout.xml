@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AppActivity"
+    android:id="@+id/appView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/error_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C10"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/error_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/error_container"
+        android:background="@color/primary">
+
+        <ImageView
+            android:id="@+id/logo_anim"
+            android:layout_width="256dip"
+            android:layout_height="256dip"
+            android:layout_gravity="center"
+            android:background="@drawable/animated_logo"/>
+
+    </FrameLayout>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/app_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/error_container">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/map_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"/>
+
+            <FrameLayout
+                android:id="@+id/preview_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"/>
+
+            <ImageButton
+                android:id="@+id/chat_toggle_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="bottom"
+                android:clickable="true"
+                android:background="@color/transparent"
+                android:src="@drawable/icon_chat_button"
+                android:scaleType="fitCenter"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/profile_toggle_button"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="12dp"
+                android:background="@drawable/ic_menu"
+                android:visibility="visible"/>
+
+            <Button
+                android:id="@+id/filter_toggle_button"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="12dp"
+                android:background="@drawable/ic_filter"
+                android:visibility="visible"/>
+
+            <Button
+                android:id="@+id/search_toggle_button"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="12dp"
+                android:background="@drawable/ic_search_dark"
+                android:visibility="visible"/>
+
+            <Button
+                android:id="@+id/map_reset_button"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="12dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_my_location"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/map_loading_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="30dp"
+                android:text="@string/gps_locating"
+                android:textColor="#4f262626"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:visibility="visible"/>
+
+            <RelativeLayout
+                android:id="@+id/chat_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:clickable="true"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/chat_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:id="@+id/chat_overlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="50dp"
+                    android:orientation="vertical"/>
+
+                <RelativeLayout
+                    android:id="@+id/input_image_wrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/chat_content"
+                    android:layout_marginBottom="50dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:clickable="false"
+                    android:background="?attr/colorPrimaryDark"
+                    android:visibility="gone">
+
+                    <ProgressBar
+                        android:id="@+id/image_loading_progress"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/input_image"
+                        android:layout_width="128dp"
+                        android:layout_height="128dp"
+                        android:layout_centerHorizontal="true" />
+
+                    <ImageButton
+                        android:id="@+id/image_rotate_left_button"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="20dp"
+                        android:layout_toStartOf="@+id/input_image"
+                        android:background="@drawable/icon_rotate_left"
+                        android:clickable="true"
+                        android:contentDescription="@string/rotate_left"
+                        android:focusable="false" />
+
+                    <ImageButton
+                        android:id="@+id/image_rotate_right_button"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/input_image"
+                        android:background="@drawable/icon_rotate_right"
+                        android:clickable="true"
+                        android:contentDescription="@string/rotate_right"
+                        android:focusable="false" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nav_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent" />
+
+            <ImageView
+                android:id="@+id/network_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="70dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_error_network"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/services_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_error_services"
+                android:visibility="gone"/>
+
+            <com.steve-jackson-studios.tenfour.Widgets.SlidingDrawer
+                android:id="@+id/vertical_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                app:handle="@+id/vertical_drawer_handle"
+                app:content="@+id/vertical_drawer_content"
+                app:topOffset="360dp">
+
+                <LinearLayout
+                    android:id="@+id/vertical_drawer_handle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="bottom"/>
+
+                <FrameLayout
+                    android:id="@+id/vertical_drawer_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical"/>
+
+            </com.steve-jackson-studios.tenfour.Widgets.SlidingDrawer>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/profile_drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="?attr/colorPrimary"
+            android:baselineAligned="false"
+            android:clickable="true"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/filter_drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="?attr/colorPrimary"
+            android:baselineAligned="false"
+            android:clickable="true"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

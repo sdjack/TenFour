@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "270856796617",
+    "project_id": "projectx-5546"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270856796617:android:f6632c75d157d5f1",
+        "android_client_info": {
+          "package_name": "com.steve-jackson-studios.tenfour"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270856796617-un9cfv9ti4pc4s50u676bvhq9v9ocppv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.steve-jackson-studios.tenfour",
+            "certificate_hash": "b909dc401b5f331f5c9393eaf9a204f60a7921b2"
+          }
+        },
+        {
+          "client_id": "270856796617-2klrnjb48r78j5dm3p81ucefgl25cabm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBryosYX9IoD44iv0wGxNNfvizXw0VzkzE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

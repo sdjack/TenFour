@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/profile_menu_edit_icon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_margin="7dp"
+        android:src="@drawable/ic_edit"/>
+
+    <Button
+        android:id="@+id/profile_menu_edit"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:paddingStart="8dp"
+        android:layout_toEndOf="@+id/profile_menu_edit_icon"
+        android:gravity="start|center_vertical"
+        android:background="@drawable/invisible"
+        android:text="@string/menu_edit"
+        android:textColor="@color/secondary_text_faded"
+        android:textSize="14sp"
+        android:textStyle="normal"/>
+
+    <ImageView
+        android:id="@+id/profile_menu_settings_icon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_margin="7dp"
+        android:layout_below="@+id/profile_menu_edit_icon"
+        android:src="@drawable/ic_settings"/>
+
+    <Button
+        android:id="@+id/profile_menu_settings"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:paddingStart="8dp"
+        android:layout_below="@+id/profile_menu_edit_icon"
+        android:layout_toEndOf="@+id/profile_menu_settings_icon"
+        android:gravity="start|center_vertical"
+        android:background="@drawable/invisible"
+        android:text="@string/menu_settings"
+        android:textColor="@color/secondary_text_faded"
+        android:textSize="14sp"
+        android:textStyle="normal"/>
+
+    <ImageView
+        android:id="@+id/profile_menu_about_icon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_margin="7dp"
+        android:layout_below="@+id/profile_menu_settings_icon"
+        android:src="@drawable/ic_about"/>
+
+    <Button
+        android:id="@+id/profile_menu_about"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:paddingStart="8dp"
+        android:layout_below="@+id/profile_menu_settings_icon"
+        android:layout_toEndOf="@+id/profile_menu_about_icon"
+        android:gravity="start|center_vertical"
+        android:background="@drawable/invisible"
+        android:text="@string/menu_about"
+        android:textColor="@color/secondary_text_faded"
+        android:textSize="14sp"
+        android:textStyle="normal"/>
+
+    <ImageView
+        android:id="@+id/profile_menu_help_icon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_margin="7dp"
+        android:layout_below="@+id/profile_menu_about_icon"
+        android:src="@drawable/ic_help"/>
+
+    <Button
+        android:id="@+id/profile_menu_help"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:paddingStart="8dp"
+        android:layout_below="@+id/profile_menu_about_icon"
+        android:layout_toEndOf="@+id/profile_menu_help_icon"
+        android:gravity="start|center_vertical"
+        android:background="@drawable/invisible"
+        android:text="@string/menu_help"
+        android:textColor="@color/secondary_text_faded"
+        android:textSize="14sp"
+        android:textStyle="normal"/>
+
+    <ImageView
+        android:id="@+id/profile_menu_logout_icon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_margin="7dp"
+        android:layout_below="@+id/profile_menu_help_icon"
+        android:src="@drawable/ic_logout"/>
+
+    <Button
+        android:id="@+id/profile_menu_logout"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:paddingStart="8dp"
+        android:layout_below="@+id/profile_menu_help_icon"
+        android:layout_toEndOf="@+id/profile_menu_logout_icon"
+        android:gravity="start|center_vertical"
+        android:background="@drawable/invisible"
+        android:text="@string/menu_logout"
+        android:textColor="@color/secondary_text_faded"
+        android:textSize="14sp"
+        android:textStyle="normal"/>
+
+</RelativeLayout>

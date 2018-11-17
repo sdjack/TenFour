@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:background="@color/primary"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="8dp"
+            android:clickable="false"
+            android:text="@string/menu_edit"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/secondary_text"/>
+
+        <Button
+            android:id="@+id/edit_profile_cancel_button"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/button_close"
+            android:clickable="true"
+            android:contentDescription="@string/cancel_button"
+            android:focusableInTouchMode="false"
+            android:padding="0dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="false"
+        android:orientation="vertical">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="top|center"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:layout_marginStart="10dp"-->
+            <!--android:layout_marginEnd="10dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:text="@string/profile_basic_info"-->
+            <!--android:textColor="@color/dark_contrast_hintcolor"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textSize="18sp"-->
+            <!--android:clickable="false"/>-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/edit_profile_name_wrapper"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/common_background"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:visibility="visible">-->
+
+            <!--<FrameLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="#6f000000"-->
+                <!--android:clickable="false" />-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/edit_profile_firstname_wrapper"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="2dp"-->
+                <!--android:layout_marginBottom="4dp"-->
+                <!--android:layout_marginTop="16dp"-->
+                <!--android:layout_marginStart="24dp"-->
+                <!--android:layout_marginEnd="24dp"-->
+                <!--android:background="@color/common_background"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:visibility="visible">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/edit_profile_firstname"-->
+                    <!--style="@style/MainActivity.EditText"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:clickable="true"-->
+                    <!--android:focusable="true"-->
+                    <!--android:hint="@string/firstname_placeholder"-->
+                    <!--android:imeOptions="actionNext"-->
+                    <!--android:inputType="text"-->
+                    <!--android:maxLength="145"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:padding="5dp" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/edit_profile_lastname_wrapper"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="2dp"-->
+                <!--android:layout_marginBottom="16dp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginStart="24dp"-->
+                <!--android:layout_marginEnd="24dp"-->
+                <!--android:layout_below="@+id/edit_profile_firstname_wrapper"-->
+                <!--android:background="@color/common_background"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:visibility="visible">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/edit_profile_lastname"-->
+                    <!--style="@style/MainActivity.EditText"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:clickable="true"-->
+                    <!--android:focusable="true"-->
+                    <!--android:hint="@string/lastname_placeholder"-->
+                    <!--android:imeOptions="actionNext"-->
+                    <!--android:inputType="text"-->
+                    <!--android:maxLength="145"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:padding="5dp" />-->
+
+            <!--</RelativeLayout>-->
+
+        <!--</RelativeLayout>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_margin="10dp"
+            android:text="@string/profile_hometown_title"
+            android:textColor="@color/secondary_text_faded"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:clickable="false"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/primary_background"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#6f000000"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/homestate_spinner_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/profile_hometown_state"
+                android:textColor="@color/secondary_text_hinted"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:clickable="false"/>
+
+            <RelativeLayout
+                android:id="@+id/homestate_spinner_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/homestate_spinner_label"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:visibility="visible">
+
+                <Spinner
+                    android:id="@+id/homestate_spinner"
+                    style="@style/TenFour.InputStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/secondary_text" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/hometown_spinner_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/homestate_spinner_wrapper"
+                android:layout_marginTop="8dp"
+                android:text="@string/profile_hometown"
+                android:textColor="@color/secondary_text_hinted"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:clickable="false"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hometown_spinner_label"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:visibility="visible">
+
+                <Spinner
+                    android:id="@+id/hometown_spinner"
+                    style="@style/TenFour.InputStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/secondary_text" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/edit_profile_submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/button_green"
+            android:contentDescription="@string/send"
+            android:text="@string/send"
+            android:textColor="@color/secondary_text"/>
+
+    </LinearLayout>
+
+</LinearLayout>

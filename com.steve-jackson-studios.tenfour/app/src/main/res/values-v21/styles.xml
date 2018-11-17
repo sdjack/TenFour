@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TenFour.ChannelBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:elevation">2dp</item>
+    </style>
+
+    <style name="TenFour.MessageBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:elevation">2dp</item>
+    </style>
+
+</resources>

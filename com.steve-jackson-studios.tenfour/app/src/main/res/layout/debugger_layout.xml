@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@color/primary_background"
+android:clickable="false">
+
+<TextView
+    android:id="@+id/debug_incoming_gps"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/primary_background"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:text=""
+    android:textSize="16sp"
+    android:textColor="@color/green"
+    android:visibility="visible"
+    android:layout_centerHorizontal="true"
+    android:clickable="false"/>
+
+<TextView
+    android:id="@+id/debug_saved_gps"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/primary_background"
+    android:layout_below="@+id/debug_incoming_gps"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:text=""
+    android:textSize="16sp"
+    android:textColor="@color/white"
+    android:visibility="visible"
+    android:layout_centerHorizontal="true"
+    android:clickable="false"/>
+
+<TextView
+    android:id="@+id/debug_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/primary_background"
+    android:layout_below="@+id/debug_saved_gps"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:text=""
+    android:textSize="14sp"
+    android:textColor="@color/white"
+    android:visibility="visible"
+    android:layout_centerHorizontal="true"
+    android:clickable="false"/>
+
+<TextView
+    android:id="@+id/debug_previewid"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/primary_background"
+    android:layout_below="@+id/debug_id"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:text=""
+    android:textSize="14sp"
+    android:textColor="@color/blue"
+    android:visibility="visible"
+    android:layout_centerHorizontal="true"
+    android:clickable="false"/>
+
+</RelativeLayout>

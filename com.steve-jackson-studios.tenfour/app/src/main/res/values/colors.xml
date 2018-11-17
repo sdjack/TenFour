@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+
+    <color name="green">#ff237f0f</color>
+    <color name="green_active">#ff21d029</color>
+    <color name="blue">#cf00b2ff</color>
+    <color name="white">#ffffffff</color>
+    <color name="white_faded">#8fffffff</color>
+    <color name="white_shadow">#2fffffff</color>
+
+    <color name="tenfour">#ffed1010</color>
+    <color name="tenfour_highlight">#fffd2020</color>
+    <color name="tenfour_dark">#ffce2a1e</color>
+    <color name="tenfour_special_dark">#ff6b0bb5</color>
+
+    <color name="dialog_underlay">#af000000</color>
+
+    <color name="primary_background">#ff202020</color>
+    <color name="primary">#ff262626</color>
+    <color name="primary_component">#ff303030</color>
+    <color name="primary_component_border">#ff3c3c3c</color>
+    <color name="primary_highlight">#ff3cff82</color>
+    <color name="primary_light">#ff424242</color>
+    <color name="primary_dark">#ff171717</color>
+    <color name="primary_border">#50000000</color>
+    <color name="primary_text_faded">#cf1f1f1f</color>
+    <color name="primary_text_hinted">#8f1f1f1f</color>
+
+    <color name="secondary">#ffefefef</color>
+    <color name="secondary_dark">#ffdfdfdf</color>
+    <color name="secondary_text">#fff0f0f0</color>
+    <color name="secondary_text_faded">#cfffffff</color>
+    <color name="secondary_text_hinted">#8fffffff</color>
+
+    <color name="accent">#ff008cd4</color>
+    <color name="input_bg">#4f000000</color>
+
+    <color name="callout_primary">#ffe2eff5</color>
+    <color name="callout_secondary">#ff77cdff</color>
+    <color name="callout_text">#af000000</color>
+
+
+    <color name="google">#ffdd4b39</color>
+    <color name="google_highlight">#ffed5b49</color>
+    <color name="facebook">#ff3b5999</color>
+    <color name="facebook_highlight">#ff4b69a9</color>
+    <color name="twitter">#ff55acee</color>
+    <color name="twitter_highlight">#ff65bcfe</color>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomLP">
+        <attr name="android:layout_gravity" />
+        <attr name="layout_position">
+            <enum name="middle" value="0" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="SlidingDrawer">
+        <attr name="handle" format="reference" />
+        <attr name="wrapper" format="reference" />
+        <attr name="content" format="reference" />
+        <attr name="orientation"  format="integer" />
+        <attr name="bottomOffset" format="dimension" />
+        <attr name="topOffset" format="dimension" />
+        <attr name="allowSingleTap" format="boolean" />
+        <attr name="animateOnClick" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="EditTextButton">
+        <attr name="closed_element" format="reference" />
+        <attr name="opened_element" format="reference" />
+    </declare-styleable>
+</resources>

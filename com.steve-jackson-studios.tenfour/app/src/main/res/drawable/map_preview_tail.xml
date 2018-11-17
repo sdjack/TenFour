@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/map_tail_shadow">
+    </item>
+    <item
+        android:gravity="top"
+        android:top="-4dip"
+        android:right="2dip"
+        android:bottom="2dip"
+        android:left="2dip"
+        android:drawable="@drawable/map_tail_large">
+    </item>
+</layer-list>

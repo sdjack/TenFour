@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/login_bg"
+        android:scaleType="centerCrop"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="6dp"
+                android:text="@string/login_title"
+                android:textColor="@color/primary_text_hinted"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/login_username"
+                    style="@style/TenFour.InputStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="145"
+                    android:maxLines="1"
+                    android:hint="@string/username_placeholder"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/login_password"
+                    style="@style/TenFour.InputStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="145"
+                    android:maxLines="1"
+                    android:hint="@string/password_placeholder"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/login_submit"
+                style="@style/TenFour.ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="42dip"
+                android:paddingStart="16dp"
+                android:paddingEnd="52dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/button_tenfour"
+                android:drawableStart="@drawable/ic_logo"
+                android:clickable="true"
+                android:focusableInTouchMode="false"
+                android:text="@string/login_label"
+                android:textAlignment="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="12dp">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.5"
+                    android:paddingBottom="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/primary_text_hinted" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:paddingStart="6dp"
+                    android:text="@string/auth_or"
+                    android:textColor="@color/primary_text_hinted"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"/>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.5"
+                    android:paddingBottom="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/primary_text_hinted" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/login_google"
+                style="@style/TenFour.ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="2dp"
+                android:paddingStart="12dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingEnd="52dp"
+                android:background="@drawable/button_google"
+                android:drawableStart="@drawable/ic_google"
+                android:clickable="true"
+                android:focusableInTouchMode="false"
+                android:text="@string/login_google_label"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/login_facebook"
+                style="@style/TenFour.ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="6dp"
+                android:paddingStart="12dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingEnd="52dp"
+                android:background="@drawable/button_facebook"
+                android:drawableStart="@drawable/ic_facebook"
+                android:clickable="true"
+                android:focusableInTouchMode="false"
+                android:text="@string/login_facebook_label"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/login_twitter"
+                style="@style/TenFour.ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="6dp"
+                android:paddingStart="12dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingEnd="52dp"
+                android:background="@drawable/button_twitter"
+                android:drawableStart="@drawable/ic_twitter"
+                android:clickable="true"
+                android:focusableInTouchMode="false"
+                android:text="@string/login_twitter_label"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/login_to_signup"
+        android:layout_width="64dp"
+        android:layout_height="28dp"
+        android:paddingStart="8dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="2dp"
+        android:paddingEnd="8dp"
+        android:clickable="true"
+        android:focusableInTouchMode="false"
+        android:text="@string/signup_title"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_text_hinted"
+        android:background="@drawable/invisible"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

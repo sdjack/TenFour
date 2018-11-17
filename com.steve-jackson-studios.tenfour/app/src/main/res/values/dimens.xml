@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="zero_px_margin">0dp</dimen>
+    <dimen name="four_px_margin">4dp</dimen>
+    <dimen name="eight_px_margin">8dp</dimen>
+    <dimen name="category_size_small">32dp</dimen>
+    <dimen name="category_size_large">42dp</dimen>
+    <dimen name="menu_icon_large">64dp</dimen>
+    <dimen name="menu_icon_small">42dp</dimen>
+    <dimen name="action_button_size">92dp</dimen>
+    <dimen name="nav_menu_radius">96dp</dimen>
+    <dimen name="chat_menu_radius">50dp</dimen>
+    <dimen name="karma_menu_radius">70dp</dimen>
+    <dimen name="icon_action_button_size">32dp</dimen>
+    <dimen name="sub_action_button_size">36dp</dimen>
+    <dimen name="sub_action_button_content_margin">6dp</dimen>
+
+    <dimen name="glide_image_width">256dp</dimen>
+    <dimen name="glide_image_height">128dp</dimen>
+
+    <dimen name="chat_avatar_size">38dp</dimen>
+    <dimen name="chat_avatar_margin">12dp</dimen>
+    <dimen name="chat_content_margin">48dp</dimen>
+    <dimen name="chat_text_anchor_margin">16dp</dimen>
+    <dimen name="chat_media_anchor_margin">11dp</dimen>
+    <dimen name="chat_toolbar_start_padding">10dp</dimen>
+    <dimen name="chat_toolbar_end_padding">1dp</dimen>
+
+    <dimen name="map_marker_image">80dp</dimen>
+    <dimen name="map_marker_padding">2dp</dimen>
+</resources>

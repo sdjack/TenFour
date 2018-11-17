@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="categories_array">
+        <item>General</item>
+        <item>Entertainment</item>
+        <item>Sports</item>
+        <item>Exercise</item>
+        <item>Food</item>
+        <item>Drinks</item>
+        <item>Music</item>
+        <item>Dance</item>
+        <item>Challenge</item>
+        <item>Family Event</item>
+        <item>Current Event</item>
+        <item>Charity</item>
+        <item>Fair</item>
+        <item>Adventure</item>
+    </string-array>
+
+</resources>

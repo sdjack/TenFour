@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TenFour</string>
+    <string name="preference_file_key">com.steve-jackson-studios.tenfour.stored_preferences</string>
+    <string name="google_maps_key">AIzaSyDRZgL-1II9BUIGqBkeUX6M4sbVnBIIhzM</string>
+    <string name="facebook_app_id">462110460786571</string>
+    <string name="fb_login_protocol_scheme">fb462110460786571</string>
+    <string name="loading">Loading</string>
+    <string name="server_client_id">461114599515-6lqti1432tpthh3qcfaqmvhlt748btdj.apps.googleusercontent.com</string>
+
+    <string name="login_title">Login</string>
+    <string name="login_label">Sign In</string>
+    <string name="login_google_label">Sign In With Google</string>
+    <string name="login_facebook_label">Sign In With Facebook</string>
+    <string name="login_twitter_label">Sign In With Twitter</string>
+
+    <string name="signup_title">Sign Up</string>
+    <string name="signup_label">Create Account</string>
+    <string name="signup_google_label">Sign Up With Google</string>
+    <string name="signup_facebook_label">Sign Up With Facebook</string>
+    <string name="signup_twitter_label">Sign Up With Twitter</string>
+
+    <string name="auth_or">OR</string>
+
+    <string name="string_placeholder">…</string>
+    <string name="firstname_placeholder">First Name</string>
+    <string name="lastname_placeholder">Last Name</string>
+    <string name="username_placeholder">User Name</string>
+    <string name="password_placeholder">Password</string>
+    <string name="time_placeholder">12:00PM</string>
+    <string name="email_placeholder">Email</string>
+    <string name="phone_placeholder">Phone</string>
+    <string name="phone_input_hint">Enter Your Phone Number</string>
+    <string name="friend_request_title">Friend Request</string>
+    <string name="friend_request_text">You have received\n
+    a new friend request.\n</string>
+    <string name="not_online">You are not online</string>
+    <string name="giphy_search">Search for an image</string>
+    <string name="ok">OK</string>
+    <string name="cancel_button">CANCEL</string>
+
+    <string name="profile_hometown_title">Hometown</string>
+    <string name="profile_hometown_state">State</string>
+    <string name="profile_hometown">Closest Metro</string>
+    <string name="profile_status_input">I am…</string>
+    <string name="profile_status_default">Hi!   </string>
+    <string name="chat_avatar">Avatar</string>
+    <string name="chat_return">Close</string>
+    <string name="send">Submit</string>
+    <string name="send_message">Write a message</string>
+
+    <string name="friends">FRIENDS</string>
+    <string name="friends_nearby">NEAR ME</string>
+    <string name="friends_requests">REQUESTS</string>
+    <string name="friends_invite">INVITE</string>
+    <string name="friends_accept">ACCEPT</string>
+    <string name="friends_deny">DENY</string>
+
+    <string name="create_button">New Chat Topic</string>
+    <string name="public_button">General Chat</string>
+    <string name="create_headline">New Conversation</string>
+    <string name="create_title">Title or Topic…</string>
+
+    <string name="chat_image">Chat Image</string>
+
+    <string name="menu_edit">Edit Profile</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_about">About</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_logout">Logout</string>
+
+    <string name="about_title">About</string>
+    <string name="about_content">Lorem Ipsum…\n\n
+            Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+            Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+            Curabitur arcu erat, accumsan index imperdiet et, porttitor at sem.
+            Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt.\n\n
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+            Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+            Vivamus suscipit tortor eget felis porttitor volutpat.
+            Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+            Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.\n\n
+            Nulla porttitor accumsan tincidunt.
+    </string>
+    <string name="about_link">user@email.com</string>
+
+    <string name="help_title">Help</string>
+    <string name="help_content">Need Help?\n\n
+            The quick, brown fox jumps over a
+            lazy dog. DJs flock by when MTV ax
+            quiz prog. Junk MTV quiz graced by
+            fox whelps.\n\n
+            The quick, brown fox jumps over a
+            lazy dog. DJs flock by when MTV ax
+            quiz prog. Junk MTV quiz graced by
+            fox whelps.\n\n
+            The quick, brown fox jumps over a
+            lazy dog. DJs flock by when MTV ax
+            quiz prog. Junk MTV quiz graced by
+            fox whelps.\n\n
+            The quick, brown fox jumps over a
+            lazy dog. DJs flock by when MTV ax
+            quiz prog. Junk MTV quiz graced by
+            fox whelps.
+    </string>
+    <string name="help_link">user@email.com</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_content">App Filters Coming Soon…</string>
+    <string name="settings_filters">Filters</string>
+    <string name="settings_link">user@email.com</string>
+    <string name="settings_label_clearmapcache">Clear Map Cache</string>
+    <string name="settings_label_clearimagecache">Clear Image Cache</string>
+
+    <string name="filters_title_map">Map Filters</string>
+    <string name="filters_heatmap">Heatmap</string>
+    <string name="filters_friendmap">Friends</string>
+    <string name="filters_visibility">Visible to Friends</string>
+    <string name="filters_stickers">Stickers</string>
+
+    <string name="rotate_left">Rotate Left</string>
+    <string name="rotate_right">Rotate Right</string>
+
+    <string name="options">Options</string>
+    <string name="datamanagement">Data Management</string>
+
+    <string name="service_not_available">Sorry, the service is not available</string>
+    <string name="invalid_lat_long_used">Invalid latitude or longitude used</string>
+
+
+    <string name="zero">0</string>
+    <string name="gps_start">Launch</string>
+    <string name="gps_stop">Stop</string>
+    <string name="gps_locating">Locating…</string>
+    <string name="gps_location">%1$s</string>
+    <string name="no_preview">Nothing to preview…</string>
+    <string name="giphy_logo_description">
+        An animated version of the Giphy company logo
+    </string>
+
+    <string name="no_location_detected">
+        No location detected. Make sure location is enabled on the device.
+    </string>
+
+    <string name="permission_rationale">
+        Location permission is needed for core functionality
+    </string>
+    <string name="permission_denied_explanation">
+        Permission was denied, but is needed for core functionality.
+    </string>
+
+</resources>

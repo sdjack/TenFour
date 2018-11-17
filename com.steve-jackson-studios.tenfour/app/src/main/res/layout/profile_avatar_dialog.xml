@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="?attr/colorPrimaryDark">
+
+    <Button
+        android:id="@+id/avatar_close_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_default"
+        android:textColor="#fff"
+        android:text="close"/>
+
+    <GridView
+        android:id="@+id/avatar_gallery_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/avatar_close_button"
+        android:clickable="true"
+        android:columnWidth="110dp"
+        android:drawSelectorOnTop="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="4dp" />
+
+</RelativeLayout>

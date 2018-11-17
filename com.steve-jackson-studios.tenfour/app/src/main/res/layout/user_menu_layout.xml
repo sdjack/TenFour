@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/user_options_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/secondary_dark"
+        android:clickable="false">
+
+        <TextView
+            android:id="@+id/user_options_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/options"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:clickable="false" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#6f000000"
+        android:clickable="false" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#2f000000"
+        android:clickable="false" />
+
+    <LinearLayout
+        android:id="@+id/user_options_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1f000000"
+        android:paddingBottom="24dp"
+        android:clickable="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_options_info"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="12dp"
+            android:padding="20dp"
+            android:text="@string/about_content"
+            android:textColor="#9f000000"
+            android:textSize="14sp"
+            android:clickable="false"/>
+
+        <TextView
+            android:id="@+id/user_options_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:text="@string/about_link"
+            android:textColor="#09f"
+            android:textSize="14sp"
+            android:clickable="false" />
+
+    </LinearLayout>
+
+</LinearLayout>

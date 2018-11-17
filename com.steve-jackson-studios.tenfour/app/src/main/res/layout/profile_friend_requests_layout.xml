@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/profile_friendrequests">
+
+    <FrameLayout
+        android:id="@+id/profile_divider_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/colorPrimary" />
+
+    <!-- The friends drawer -->
+    <TextView
+        android:id="@+id/friendrequests_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_divider_2"
+        android:padding="4dp"
+        android:textColor="@color/secondary_text_faded"
+        android:textSize="12sp"
+        android:text="Pending Requests"/>
+
+    <ListView android:id="@+id/friendrequests_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/friendrequests_label"
+        android:choiceMode="singleChoice"
+        android:divider="?attr/colorPrimaryDark"
+        android:dividerHeight="0dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:padding="0dp">
+
+    <RelativeLayout
+        android:id="@+id/giphy_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="@color/primary_background"
+        android:orientation="horizontal"
+        android:paddingBottom="0dp"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"
+        android:paddingTop="4dp"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/giphy_search_button"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/ic_search"
+            android:clickable="true"
+            android:contentDescription="@string/send"
+            android:focusable="false" />
+
+        <EditText
+            android:id="@+id/giphy_search_field"
+            style="@style/TenFour.InputStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="4dp"
+            android:layout_toStartOf="@+id/giphy_search_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="@string/giphy_search"
+            android:imeOptions="actionSearch"
+            android:inputType="textAutoComplete"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:padding="5dp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/giphy_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/giphy_search"
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:columnWidth="100dp"
+        android:drawSelectorOnTop="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/splash"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/primary">
+
+        <ImageView
+            android:id="@+id/logo_anim"
+            android:layout_width="256dip"
+            android:layout_height="256dip"
+            android:layout_gravity="center"
+            android:background="@drawable/animated_logo"/>
+
+    </FrameLayout>
+
+</LinearLayout>

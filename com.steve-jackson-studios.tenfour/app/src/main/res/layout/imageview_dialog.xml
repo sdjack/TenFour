@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialog_underlay"
+    android:clickable="true"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/popup_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="20dp"
+        android:clickable="false"
+        android:contentDescription="@string/chat_image"
+        android:gravity="center_vertical" />
+
+    <ImageButton
+        android:id="@+id/popup_image_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="@string/chat_image"
+        android:gravity="center_vertical"
+        android:src="@android:color/transparent" />
+
+</RelativeLayout>

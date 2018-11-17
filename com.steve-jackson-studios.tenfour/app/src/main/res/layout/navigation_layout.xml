@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/floating_menu_backdrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/dialog_underlay"/>
+
+    <ImageButton
+        android:id="@+id/media_menu_button"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_compose"
+        android:scaleType="fitCenter"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/user_menu_button"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@color/transparent"
+        android:src="@drawable/invisible"
+        android:scaleType="fitCenter"/>
+
+    <LinearLayout
+        android:id="@+id/karma_menu"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@drawable/voting_bg"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/bad1"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="54dp"
+            android:background="@drawable/invisible"
+            android:src="@drawable/emoji_boring"
+            android:scaleType="fitXY"/>
+
+        <ImageButton
+            android:id="@+id/good4"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-16dp"
+            android:background="@drawable/invisible"
+            android:src="@drawable/emoji_love"
+            android:scaleType="fitXY"/>
+
+        <ImageButton
+            android:id="@+id/good3"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/invisible"
+            android:src="@drawable/emoji_laugh"
+            android:scaleType="fitXY"/>
+
+        <ImageButton
+            android:id="@+id/good2"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/invisible"
+            android:src="@drawable/emoji_smile"
+            android:scaleType="fitXY"/>
+
+        <ImageButton
+            android:id="@+id/good1"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="-14dp"
+            android:layout_marginStart="54dp"
+            android:background="@drawable/invisible"
+            android:src="@drawable/emoji_cool"
+            android:scaleType="fitXY"/>
+
+        <ImageButton
+            android:id="@+id/bad2"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="-118dp"
+            android:background="@drawable/invisible"
+            android:src="@drawable/emoji_dissaproval"
+            android:scaleType="fitXY"/>
+
+        <ImageButton
+            android:id="@+id/bad3"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="106dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/invisible"
+            android:src="@drawable/emoji_shocked"
+            android:scaleType="fitXY"/>
+
+        <ImageButton
+            android:id="@+id/bad4"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="88dp"
+            android:background="@drawable/invisible"
+            android:src="@drawable/emoji_mad"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+</FrameLayout>
